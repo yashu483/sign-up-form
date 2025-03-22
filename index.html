@@ -4,11 +4,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moon Sign Up</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/png" href="resources/images/favicon.png">
+    <title>Rest In Peace</title>
 </head>
 
 <body>
+    <header id="header">
+        <div class="icon-name"><img src="./resources/images/ghost-icon.png" alt="ghost-icon" id="ghost-icon">
+            GhostGathering</div>
+        <ul>
+            <li>🏚️ Haunted Home List</li>
+            <li>🎃 Spooky Schedule</li>
+            <li>💀 Ghostly Asked Questions</li>
+            <li>🪦 Contact the Other Side</li>
+            <li>Escape Policy</li>
+        </ul>
+    </header>
+    <div class="main-container">
+        <div class="heading">
+            <h1>Worlds Biggest <img src="resources/images/heading.png" alt="a ghost image" id="heading-img"> Ghost Party
+            </h1>
+            <p>Thousands of ghosts, ghouls, and undead legends raving under a blood moon 🌕, sipping ectoplasm cocktails
+                🍹, breakdancing in mid-air 🕺, and telling horror stories so scary that even Wi-Fi signals run away.
+                📡💀</p>
 
+        </div>
+        <div class="form-contaier">
+            <div class="div-left">
+                
+            </div>
+            <div class="div-right">
+                <form action="" method="">
+                    <div>
+                        <label for="user-name">Name:</label>
+                        <input type="text" id="user-name" name="user-name" placeholder="Casper" required>
+                        <label for="user-surname">Surname:</label>
+                        <input type="text" id="user-surname" name="user-surname" placeholder="McHaunty" required>
+                    </div>
+                    <div>
+                        <label for="user-email">Email:</label>
+                        <input type="email" id="user-email" name="user-email" placeholder="why.am.i.dead@ghostmail.com" required>
+                        <label for="tel">Number</label>
+                        <input type="tel" id="tel" name="user-number" placeholder="xxx-xxx-1313" required>
+                    </div>
+                    <div>
+                        <label for="ghost-type">Type of Ghost</label>
+                        <select name="ghost-type" id="ghost-type">
+                            <option value="friendly">Friendly Ghost (Casper vibes)</option>
+                            <option value="prankster">Mischievous Spirit (Prankster)</option>
+                            <option value="dramatic">Phantom of the Opera (Dramatic)</option>
+                            <option value="chaotic">Poltergeist (Chaotic)</option>
+                        </select>
+                    </div>
+                    <fieldset>
+                        <legend>Choose Your Favorite Costume</legend>
+                        <label for="white-sheet">Classic White Sheet 👻</label>
+                        <input type="radio" id="white-sheet" name="fav-costume" value="white-sheet">
+                        <label for="victorian"> Victorian Ghost 🎩</label>
+                        <input type="radio" id="victorian" name="fav-costume" value="victorian">
+                        <label for="shadowy"> Shadowy Figure 🌑</label>
+                        <input type="radio" id="shadowy" name="fav-costume" value="shadowy">
+                        <label for="reaper">Skeletal Reaper 💀</label>
+                        <input type="radio" id="reaper" name="fav-costume" value="reaper">
+                    </fieldset>
+            </div>
+            <div>
+                <label for="fav-place">Favorite Haunting Spot🏚️</label>
+                <textarea name="fav-place" id="fav-place" placeholder="Ex. Graveyard Lane, Plot 666"></textarea>
+            </div>
+            <button type="submit">Summon Me to the Party!</button>
+            </form>
+
+        </div>
+    </div>
+
+    <footer id="footer">
+
+    </footer>
 </body>
 
 </html>

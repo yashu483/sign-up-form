@@ -1,0 +1,43 @@
+/* *{
+    --font-family:
+} */
+html{
+    margin: none;
+    padding: none;
+    width: 100%;
+    height: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    color : white;
+    font-weight: bold;
+    z-index: -1;  /* Pushes it behind everything */
+    background: url('resources/images/ghost-house.png') no-repeat ;
+    background-size: cover;
+    /* background-size: cover; */
+    height: 100%;
+    width: 100%;
+    margin: none;
+    padding: none;
+}
+#ghost-icon{
+    width: 1em;
+    height: 1em;
+}
+
+#header,
+#footer{
+    width:100% ;
+    height: 6%;
+    background-color: black;
+}
+.main-container{
+    width: 100%;
+    height: 100%;
+}
+
+#heading-img{
+    width: 2em;
+    height: 2em;
+}
