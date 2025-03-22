@@ -1,43 +1,148 @@
-/* *{
-    --font-family:
-} */
-html{
-    margin: none;
-    padding: none;
-    width: 100%;
-    height: 100%;
-}
-body{
-    display: flex;
-    flex-direction: column;
-    color : white;
-    font-weight: bold;
-    z-index: -1;  /* Pushes it behind everything */
-    background: url('resources/images/ghost-house.png') no-repeat ;
-    background-size: cover;
-    /* background-size: cover; */
-    height: 100%;
-    width: 100%;
-    margin: none;
-    padding: none;
-}
-#ghost-icon{
-    width: 1em;
-    height: 1em;
+@font-face {
+    font-family: "dark-graves";
+    src: url(./resources/fonts/heading-fonts/DarkGraves-Regular.woff2) format("woff2"),
+        url(/resources/fonts/heading-fonts/DarkGraves-Regular.woff) format("woff");
 }
 
-#header,
-#footer{
-    width:100% ;
+@font-face {
+    font-family: "another-danger";
+    src: url(/resources/fonts/heading-fonts/AnotherDangerDemo.woff2) format("woff2"),
+        url(./resources/fonts/heading-fonts/AnotherDangerDemo.woff) format("woff");
+}
+
+@font-face {
+    font-family: "chapters";
+    src: url(./resources/fonts/heading-fonts/ChaptersDEMO.woff2) format("woff2"),
+        url(./resources/fonts/heading-fonts/ChaptersDEMO.woff) format("woff");
+}
+
+@font-face {
+    font-family: "fears";
+    src: url(./resources/fonts/heading-fonts/DKFaceYourFears.woff2) format("woff2"),
+        url(./resources/fonts/heading-fonts/DKFaceYourFears.woff) format("woff");
+}
+
+/* fonts for  normal text below */
+@font-face {
+    font-family: "james-school";
+    src: url(./resources/fonts/text-fonts/JamesSchool.woff2) format("woff2"),
+        url(./resources/fonts/text-fonts/JamesSchool.woff) format("woff");
+}
+
+@font-face {
+    font-family: "fira-code";
+    src: url(./resources/fonts/text-fonts/FiraCode-Regular.woff2) format("woff2"),
+        url(./resources/fonts/text-fonts/FiraCode-Regular.woff) format("woff");
+}
+
+@font-face {
+    font-family: "macondo";
+    src: url(./resources/fonts/text-fonts/Macondo-Regular.woff2) format("woff2"),
+        url(./resources/fonts/text-fonts/Macondo-Regular.woff) format("woff");
+}
+
+:root {
+    --heading-fonts: "another-danger", "dark-graves", "chapters", "fears";
+    --heading-numbers: "chapters", "dark-graves", "fears";
+    --text-fonts: "fira-code", "macondo", "james-school";
+    --full-size: 100%;
+}
+
+html,
+body {
+    height: var(--full-size);
+    width: 100%;
+    margin: none;
+    padding: none;
+    border: none;
+}
+
+body {
+    background-image: url(./resources/images/ghost-house.png);
+    background-size: cover;
+    background-attachment: scroll;
+    font-family: var(--text-fonts);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: stretch;
+    justify-content: center;
+}
+
+#ghost-icon {
+    height: 2em;
+    width: 2em;
+}
+
+header,
+footer {
     height: 6%;
     background-color: black;
 }
-.main-container{
-    width: 100%;
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+header li {
+    display: inline;
+}
+
+header ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 4em;
+    margin: 15px;
+    font-family: var(--heading-fonts);
+    color: orange;
+}
+
+header div {
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.5rem;
+    font-family: var(--heading-fonts);
+}
+
+#heading-img {
+    height: 4.5em;
+    width: 4.5em;
+}
+
+header span {
+    font-family: var(--heading-numbers);
+    font-size: 1.5rem;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
     height: 100%;
 }
 
-#heading-img{
-    width: 2em;
-    height: 2em;
+.heading h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--heading-fonts);
+    color: red;
+    font-size: 2.5rem;
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.heading p {
+    width: 70%;
+    color: red;
+    font-weight: bold;
 }

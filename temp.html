@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>curve</title>
+    <style>
+        .curved-heading {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            gap: 5px;
+        }
+
+        .curve-text {
+            display: inline-block;
+            font-size: 30px;
+            font-weight: bold;
+            transform: rotate(calc(var(--i) * 10deg));
+            /* Adjusts the curve */
+        }
+
+        #heading-img {
+            width: 80px;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="curved-heading">
+        <span class="curve-text" style="--i:-5;">W</span>
+        <span class="curve-text" style="--i:-4;">o</span>
+        <span class="curve-text" style="--i:-3;">r</span>
+        <span class="curve-text" style="--i:-2;">l</span>
+        <span class="curve-text" style="--i:-1;">d</span>
+        <span class="curve-text" style="--i:0;">'s</span>
+        <span class="curve-text" style="--i:1;">B</span>
+        <span class="curve-text" style="--i:2;">i</span>
+        <span class="curve-text" style="--i:3;">g</span>
+        <span class="curve-text" style="--i:4;">g</span>
+        <span class="curve-text" style="--i:5;">e</span>
+        <span class="curve-text" style="--i:6;">s</span>
+        <span class="curve-text" style="--i:7;">t</span>
+    </h1>
+    <img src="resources/images/heading.png" alt="a ghost image" id="heading-img">
+
+    <h1 class="curved-heading">
+        <span class="curve-text" style="--i:-4;">G</span>
+        <span class="curve-text" style="--i:-3;">h</span>
+        <span class="curve-text" style="--i:-2;">o</span>
+        <span class="curve-text" style="--i:-1;">s</span>
+        <span class="curve-text" style="--i:0;">t</span>
+        <span class="curve-text" style="--i:1;">P</span>
+        <span class="curve-text" style="--i:2;">a</span>
+        <span class="curve-text" style="--i:3;">r</span>
+        <span class="curve-text" style="--i:4;">t</span>
+        <span class="curve-text" style="--i:5;">y</span>
+    </h1>
+    <svg width="500" height="200">
+        <defs>
+            <path id="curve" d="M 50 150 Q 250 50 450 150" fill="transparent" />
+        </defs>
+        <text font-size="30" fill="black">
+            <textPath href="#curve">World's Biggest</textPath>
+        </text>
+    </svg>
+
+    <img src="resources/images/heading.png" alt="a ghost image" id="heading-img">
+
+    <svg width="500" height="200">
+        <defs>
+            <path id="curve-bottom" d="M 50 50 Q 250 150 450 50" fill="transparent" />
+        </defs>
+        <text font-size="30" fill="black">
+            <textPath href="#curve-bottom">Ghost Party</textPath>
+        </text>
+    </svg>
+
+</body>
+
+</html>
