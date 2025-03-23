@@ -188,13 +188,14 @@ header span {
     text-align: start;
 }
 
-.div-right form {
+form {
     display: flex;
     flex-direction: column;
     width: 100%;
     padding: 3vmin;
     padding-top: 10px;
     gap: 20px;
+    position: relative;
 }
 
 h1 {
@@ -299,4 +300,39 @@ form button {
     color: red;
     letter-spacing: 2px;
     border-radius: 15px;
+}
+
+label[for="user-surname"]::before{
+    content:"Fields marked with * are cursed if left empty!😈";
+    position: absolute;
+    /* color:red; */
+    font-size: 1em;
+    font-weight: normal;
+    top: -30px;
+    left: -40px;
+
+}
+
+div:has(label[for="user-surname"]){
+    position: relative;
+}
+form span{
+color: red;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+footer img{
+    width: 50px;
+    height: 50px;
+}
+
+footer a{
+    width: 100%;
+    height: 100%;
 }
