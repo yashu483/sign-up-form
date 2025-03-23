@@ -50,7 +50,7 @@
 
 html,
 body {
-    height: var(--full-size);
+    /* height: var(--full-size); */
     width: 100%;
     margin: none;
     padding: none;
@@ -59,7 +59,7 @@ body {
 
 body {
     background-image: url(./resources/images/ghost-house.png);
-    background-size: cover;
+    background-size: 100%;
     background-attachment: scroll;
     font-family: var(--text-fonts);
     color: white;
@@ -77,7 +77,7 @@ body {
 
 header,
 footer {
-    height: 6%;
+    height: 3vmin;
     background-color: black;
 }
 
@@ -98,6 +98,7 @@ header ul {
     margin: 15px;
     font-family: var(--heading-fonts);
     color: orange;
+    letter-spacing: 2px;
 }
 
 header div {
@@ -107,6 +108,7 @@ header div {
     gap: 1rem;
     font-size: 1.5rem;
     font-family: var(--heading-fonts);
+    color: red;
 }
 
 #heading-img {
@@ -122,7 +124,6 @@ header span {
 .main-container {
     display: flex;
     flex-direction: column;
-    height: 100%;
 }
 
 .heading h1 {
@@ -132,6 +133,7 @@ header span {
     font-family: var(--heading-fonts);
     color: red;
     font-size: 2.5rem;
+    letter-spacing: 2px;
 }
 
 .heading {
@@ -143,6 +145,153 @@ header span {
 
 .heading p {
     width: 70%;
-    color: red;
+    color: white;
     font-weight: bold;
+    font-size: 1.3em;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 2vmin;
+}
+
+.div-left {
+    width: 45%;
+    flex-direction: column;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.div-right {
+    width: 50%;
+}
+
+.div-left,
+.div-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.div-left ol {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: start;
+}
+
+.div-right form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 3vmin;
+    padding-top: 10px;
+    gap: 20px;
+}
+
+h1 {
+    font-family: "fears", "dark-graves";
+    color: red;
+    font-size: 40px;
+}
+
+form>div {
+    width: 100%;
+    display: flex;
+}
+
+form div label {
+    font-size: 1.2;
+    font-weight: bold;
+    display: block;
+    margin-left: 10px;
+}
+
+form>div>div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 15px;
+}
+
+form div label {
+    text-align: left;
+    margin: none;
+    color: greenyellow;
+}
+
+form>div input {
+    width: 70%;
+    height: 1.5em;
+    margin-right: auto;
+    border-radius: 5px;
+}
+
+form div label:nth-of-type(2) {
+    margin-left: auto;
+}
+
+form div input:nth-of-type(2) {
+    margin-right: 15px;
+    margin-left: auto;
+}
+
+input::placeholder,
+textarea::placeholder {
+    font-size: 1.2em;
+    margin-left: 5px;
+}
+
+div:has(textarea) {
+    display: flex;
+    flex-direction: column
+}
+
+form textarea {
+    display: block;
+    width: 50%;
+    height: 60px;
+    resize: none
+}
+
+form>div:has(select) {
+    display: flex;
+    flex-direction: column;
+    gap: 5x;
+    padding: 15px
+}
+
+form select {
+    height: 1.5em;
+    font-size: 1em;
+    display: block;
+    width: 50%;
+}
+
+form fieldset {
+    border: none;
+}
+
+form fieldset>legend {
+    color: greenyellow;
+    font-weight: bold;
+    text-align: start;
+}
+
+.main-container h1 {
+    margin-top: 20px;
+}
+
+form button {
+    width: max-content;
+    background-color: orange;
+    font-size: 1.3em;
+    padding: 8px;
+    font-family: var(--heading-fonts);
+    color: red;
+    letter-spacing: 2px;
+    border-radius: 15px;
 }
