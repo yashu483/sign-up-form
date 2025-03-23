@@ -302,8 +302,8 @@ form button {
     border-radius: 15px;
 }
 
-label[for="user-surname"]::before{
-    content:"Fields marked with * are cursed if left empty!😈";
+label[for="user-surname"]::before {
+    content: "Fields marked with * are cursed if left empty!😈";
     position: absolute;
     /* color:red; */
     font-size: 1em;
@@ -313,26 +313,27 @@ label[for="user-surname"]::before{
 
 }
 
-div:has(label[for="user-surname"]){
+div:has(label[for="user-surname"]) {
     position: relative;
 }
-form span{
-color: red;
+
+form span {
+    color: red;
 }
 
-footer{
+footer {
     display: flex;
     justify-content: center;
     align-items: center;
     padding-bottom: 15px;
 }
 
-footer img{
+footer img {
     width: 50px;
     height: 50px;
 }
 
-footer a{
+footer a {
     width: 100%;
     height: 100%;
 }
